@@ -10,6 +10,7 @@ EnvironmentFile=-/etc/default/sentinel_{{ redis_sentinel_port }}
 PIDFile={{ redis_sentinel_pidfile }}
 TimeoutStopSec=0
 Restart=always
+RestartSec=5
 User={{ redis_user }}
 Group={{ redis_group }}
 
